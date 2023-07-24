@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --backgroung-primary: rgb(240, 243, 245);
+    --color-primary: rgb(238, 243, 247);
+    --color-fondo: rgb(255, 108, 14);
+
+    --shadow-1: rgba(198, 201, 204, 0.2) 0px 8px 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: 0;
+    padding: 8px 15px;
+}
+
+input {
+    outline: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*Clases generales start*/
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.brd-1 {
+    border-radius: 10px;
+}
+
+.brd-2 {
+    border-radius: 8px;
+}
+
+.brd-3 {
+    border-radius: 5px;
+}
+
+.fit {
+    object-fit: cover;
+}
+
+.btn-transparent {
+    background-color: transparent;
+}
+
+/*Clases generales end*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--backgroung-primary);
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*HEADER*/
+header {
+    width: 100%;
+    height: 60px;
+    padding: 5px 30px;
+    box-shadow: var(--shadow-1);
+    background-color: #ffffffcf;
+    position: fixed;
+    z-index: 999999999;
+}
+
+.pages .nav li a {
+    padding: 10px;
+    border: 2px transparent;
+    
+}
+
+.pages .nav li a:hover {
+    color: var(--color-fondo);
+}
+
+
+.btn_ctn {
+    padding: 4px 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid var(--color-fondo);
+    color: var(--color-fondo);
+}
+
+
+.btn_ctn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn_ctn:hover {
+    background-color: var(--color-fondo);
+    color: #fff;
+}
+
+.btn-log_we{
+    padding: 10px 50px;
+}
+
+
+
+/*HEADER*/
+
+
+
+
+
+/*MAIN*/
+
+main {
+    width: 100%;
+    padding-top: 60px;
+}
+
+
+.carousel {
+    height: 500px;
+}
+
+.carousel .carousel-inner {
+    width: 100%;
+    height: 500px;
+    margin: auto
+}
+
+.carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+.btn-control {
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.078);
+}
+
+
+section {
+    width: 100%;
+}
+
+.section_inicio{
+    margin-top: -60px;
+}
+
+#video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+#video-container .content {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_inicio .video-container .content{
+    text-align: center;
+}
+
+.cent_apt_wr5{
+    text-align: center;
+}
+
+.cent_apt_wr5 h1{
+    color: #fff !important;
+}
+.cent_apt_wr5 h5{
+    color: #fff !important;
+}
+
+
+
+/*MAIN*/
